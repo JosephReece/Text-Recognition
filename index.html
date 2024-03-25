@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+
+	<title>Text Recognition App</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="popup.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body onload="Initalise();">
+	<script src="https://neural-network.epicjoer.repl.co/neuralnetwork.js"></script>
+	<script src="main.js"></script>
+	<script src="imageprocessing.js"></script>
+	<script src="OCR.js"></script>
+	<div id="ImageDisplayWrapper">
+		<canvas id="ImageDisplay"></canvas>
+	</div>
+	<div id="UploadMenu">
+		<button id="LoadImageUpload" onclick="LoadImageUpload();">Upload an Image</button>
+		<button id="LoadImageURL" onclick="LoadImageURL();">Use an Image URL</button>
+		<button id="LoadImageCamera" onclick="LoadImageCamera();">Take a Photo</button>
+		<div style="display: inline-block; padding-left: 16px;">
+			<label for="PointDifferenceTolerance">Text Colour Tolerance</label>
+			<input type="range" id="PointDifferenceTolerance" name="PointDifferenceTolerance" min="1" max="75" value="25"
+				step="1">
+		</div>
+	</div>
+	<div id="ButtonMenu">
+		<button id="ScanImage" onclick="ScanImageForText();">Scan the Image for Text</button>
+		<button id="RemoveHighlights" onclick="ResetHighlightOverlay();">Remove Highlighting</button>
+		<div style="display: inline-block; padding-left: 16px;">
+			<label for="HighlightSize">Highlighter Size</label>
+			<input type="range" id="HighlightSize" name="HighlightSize" min="1" max="100" value="50" step="1">
+		</div>
+	</div>
+	<div id="TextOutWrapper">
+		<p id="TextOut"></p>
+	</div>
+</body>
+
+</html>

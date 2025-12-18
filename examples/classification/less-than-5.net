@@ -1,0 +1,190 @@
+{
+  "GenerationTime": "08/07/2022, 22:04:59",
+  "LossFunctionName": "Binary Cross-Entropy",
+  "EvaluationFunctionName": "Percentage Tolerance",
+  "InputLabels": [
+    "Number to Check"
+  ],
+  "OutputLabels": [
+    "Greater Than 5 (Probability)",
+    "Less Than or Equal to 5 (Probability)"
+  ],
+  "LearningRate": 0.001,
+  "GainChange": 0.1,
+  "BatchSize": 1,
+  "Layers": [
+    [
+      {
+        "Tensors": [
+          {
+            "Weight": 11.65706650618383,
+            "Gain": 1,
+            "LastDirection": true
+          },
+          {
+            "Weight": -11.600111678523968,
+            "Gain": 1,
+            "LastDirection": true
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "Tensors": [],
+        "ActivationFunctionName": "Linear",
+        "Bias": -62.86069296925287
+      },
+      {
+        "Tensors": [],
+        "ActivationFunctionName": "Linear",
+        "Bias": 62.86069296925287
+      }
+    ],
+    "Soft Max"
+  ],
+  "TrainingData": [
+    {
+      "Message": "1",
+      "InputSample": [
+        1
+      ],
+      "OutputSample": [
+        0,
+        1
+      ]
+    },
+    {
+      "Message": "2",
+      "InputSample": [
+        2
+      ],
+      "OutputSample": [
+        0,
+        1
+      ]
+    },
+    {
+      "Message": "3",
+      "InputSample": [
+        3
+      ],
+      "OutputSample": [
+        0,
+        1
+      ]
+    },
+    {
+      "Message": "4",
+      "InputSample": [
+        4
+      ],
+      "OutputSample": [
+        0,
+        1
+      ]
+    },
+    {
+      "Message": "5",
+      "InputSample": [
+        5
+      ],
+      "OutputSample": [
+        0,
+        1
+      ]
+    },
+    {
+      "Message": "6",
+      "InputSample": [
+        6
+      ],
+      "OutputSample": [
+        1,
+        0
+      ]
+    },
+    {
+      "Message": "7",
+      "InputSample": [
+        7
+      ],
+      "OutputSample": [
+        1,
+        0
+      ]
+    },
+    {
+      "Message": "8",
+      "InputSample": [
+        8
+      ],
+      "OutputSample": [
+        1,
+        0
+      ]
+    },
+    {
+      "Message": "9",
+      "InputSample": [
+        9
+      ],
+      "OutputSample": [
+        1,
+        0
+      ]
+    },
+    {
+      "Message": "10",
+      "InputSample": [
+        10
+      ],
+      "OutputSample": [
+        1,
+        0
+      ]
+    }
+  ],
+  "TestingData": [
+    {
+      "Message": "1",
+      "InputSample": [
+        -10
+      ],
+      "OutputSample": [
+        0,
+        1
+      ]
+    },
+    {
+      "Message": "2",
+      "InputSample": [
+        0
+      ],
+      "OutputSample": [
+        0,
+        1
+      ]
+    },
+    {
+      "Message": "3",
+      "InputSample": [
+        5
+      ],
+      "OutputSample": [
+        0,
+        1
+      ]
+    },
+    {
+      "Message": "4",
+      "InputSample": [
+        10
+      ],
+      "OutputSample": [
+        1,
+        0
+      ]
+    }
+  ]
+}

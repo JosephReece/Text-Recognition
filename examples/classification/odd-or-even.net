@@ -1,0 +1,177 @@
+{
+  "GenerationTime": "08/07/2022, 21:53:57",
+  "LossFunctionName": "Squared Error",
+  "EvaluationFunctionName": "Percentage Tolerance",
+  "InputLabels": [
+    "Number to Check"
+  ],
+  "OutputLabels": [
+    "Odd (Probability)"
+  ],
+  "LearningRate": 0.1,
+  "GainChange": 0.1,
+  "BatchSize": 1,
+  "Layers": [
+    [
+      {
+        "Tensors": [
+          {
+            "Weight": -3.1384230152813077,
+            "Gain": 1,
+            "LastDirection": true
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "Tensors": [
+          {
+            "Weight": -0.5000399221758542,
+            "Gain": 1,
+            "LastDirection": true
+          }
+        ],
+        "ActivationFunctionName": "Cosine",
+        "Bias": -0.01779258603868966
+      }
+    ],
+    [
+      {
+        "Tensors": [],
+        "ActivationFunctionName": "ReLU",
+        "Bias": 0.49999154625473774
+      }
+    ]
+  ],
+  "TrainingData": [
+    {
+      "Message": "1",
+      "InputSample": [
+        1
+      ],
+      "OutputSample": [
+        1
+      ]
+    },
+    {
+      "Message": "2",
+      "InputSample": [
+        2
+      ],
+      "OutputSample": [
+        0
+      ]
+    },
+    {
+      "Message": "3",
+      "InputSample": [
+        3
+      ],
+      "OutputSample": [
+        1
+      ]
+    },
+    {
+      "Message": "4",
+      "InputSample": [
+        4
+      ],
+      "OutputSample": [
+        0
+      ]
+    },
+    {
+      "Message": "5",
+      "InputSample": [
+        5
+      ],
+      "OutputSample": [
+        1
+      ]
+    },
+    {
+      "Message": "6",
+      "InputSample": [
+        6
+      ],
+      "OutputSample": [
+        0
+      ]
+    },
+    {
+      "Message": "7",
+      "InputSample": [
+        7
+      ],
+      "OutputSample": [
+        1
+      ]
+    },
+    {
+      "Message": "8",
+      "InputSample": [
+        8
+      ],
+      "OutputSample": [
+        0
+      ]
+    },
+    {
+      "Message": "9",
+      "InputSample": [
+        9
+      ],
+      "OutputSample": [
+        1
+      ]
+    },
+    {
+      "Message": "10",
+      "InputSample": [
+        10
+      ],
+      "OutputSample": [
+        0
+      ]
+    }
+  ],
+  "TestingData": [
+    {
+      "Message": "1",
+      "InputSample": [
+        -10
+      ],
+      "OutputSample": [
+        0
+      ]
+    },
+    {
+      "Message": "2",
+      "InputSample": [
+        -1
+      ],
+      "OutputSample": [
+        1
+      ]
+    },
+    {
+      "Message": "3",
+      "InputSample": [
+        1
+      ],
+      "OutputSample": [
+        1
+      ]
+    },
+    {
+      "Message": "4",
+      "InputSample": [
+        10
+      ],
+      "OutputSample": [
+        0
+      ]
+    }
+  ]
+}

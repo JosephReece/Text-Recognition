@@ -1,0 +1,68 @@
+{
+  "GenerationTime": "31/01/2023, 10:02:16",
+  "LossFunctionName": "Squared Error",
+  "EvaluationFunctionName": "5% Tolerance",
+  "WeightGenerationFunctionName": "Xavier",
+  "InputLabels": [
+    "Input"
+  ],
+  "OutputLabels": [
+    "Output"
+  ],
+  "LearningRate": 0.001,
+  "BatchSize": 1,
+  "GainChange": 0,
+  "GainMinimum": 1,
+  "GainMaximum": 1,
+  "Layers": [
+    [
+      {
+        "Tensors": [
+          {
+            "Weight": 1.999999999999835,
+            "Gain": 1,
+            "LastDirection": -1
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "Tensors": [],
+        "ActivationFunctionName": "Linear",
+        "Bias": 2.475599539900515e-13
+      }
+    ]
+  ],
+  "TrainingData": [
+    {
+      "Message": "1",
+      "InputSample": [
+        1
+      ],
+      "OutputSample": [
+        2
+      ]
+    },
+    {
+      "Message": "1",
+      "InputSample": [
+        2
+      ],
+      "OutputSample": [
+        4
+      ]
+    }
+  ],
+  "TestingData": [
+    {
+      "Message": "1",
+      "InputSample": [
+        3
+      ],
+      "OutputSample": [
+        6
+      ]
+    }
+  ]
+}

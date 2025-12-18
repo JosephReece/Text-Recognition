@@ -1,0 +1,4 @@
+Regression - Mean Square Error
+Binary Classification (Mutually Exclusive) - Binary Cross-Entropy w/ Softmax
+Multiclass Classification (Mutually Exclusive) - Cross-Entropy w/ Softmax
+Classification (Mutually Inclusive) - Cross-Entropy w/ Sigmoid

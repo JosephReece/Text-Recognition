@@ -1,0 +1,180 @@
+{
+  "GenerationTime": "10/09/2022, 23:26:33",
+  "LossFunctionName": "Squared Error",
+  "EvaluationFunctionName": "5% Tolerance",
+  "WeightGenerationFunctionName": "Xavier",
+  "InputLabels": [
+    "Number 1",
+    "Number 2",
+    "Number 3"
+  ],
+  "OutputLabels": [
+    "Sum"
+  ],
+  "LearningRate": 0.001,
+  "BatchSize": 1,
+  "GainChange": 0,
+  "Layers": [
+    [
+      {
+        "Tensors": [
+          {
+            "Weight": 1,
+            "Gain": 1,
+            "LastDirection": 0
+          }
+        ]
+      },
+      {
+        "Tensors": [
+          {
+            "Weight": 1,
+            "Gain": 1,
+            "LastDirection": 0
+          }
+        ]
+      },
+      {
+        "Tensors": [
+          {
+            "Weight": 0.9999999999999999,
+            "Gain": 1,
+            "LastDirection": 0
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "Tensors": [],
+        "ActivationFunctionName": "Linear",
+        "Bias": 8.846675596540566e-16
+      }
+    ]
+  ],
+  "TrainingData": [
+    {
+      "Message": "1",
+      "InputSample": [
+        5,
+        4,
+        1
+      ],
+      "OutputSample": [
+        10
+      ]
+    },
+    {
+      "Message": "2",
+      "InputSample": [
+        17,
+        9,
+        4
+      ],
+      "OutputSample": [
+        30
+      ]
+    },
+    {
+      "Message": "3",
+      "InputSample": [
+        16,
+        -19,
+        5
+      ],
+      "OutputSample": [
+        2
+      ]
+    },
+    {
+      "Message": "4",
+      "InputSample": [
+        0,
+        0,
+        0
+      ],
+      "OutputSample": [
+        0
+      ]
+    },
+    {
+      "Message": "5",
+      "InputSample": [
+        -11,
+        2,
+        15
+      ],
+      "OutputSample": [
+        6
+      ]
+    },
+    {
+      "Message": "6",
+      "InputSample": [
+        -9,
+        -11,
+        -3
+      ],
+      "OutputSample": [
+        -23
+      ]
+    },
+    {
+      "Message": "7",
+      "InputSample": [
+        4,
+        11,
+        11
+      ],
+      "OutputSample": [
+        26
+      ]
+    }
+  ],
+  "TestingData": [
+    {
+      "Message": "1",
+      "InputSample": [
+        -2,
+        -4,
+        -1
+      ],
+      "OutputSample": [
+        -7
+      ]
+    },
+    {
+      "Message": "2",
+      "InputSample": [
+        12,
+        -9,
+        5
+      ],
+      "OutputSample": [
+        8
+      ]
+    },
+    {
+      "Message": "3",
+      "InputSample": [
+        10,
+        13,
+        5
+      ],
+      "OutputSample": [
+        28
+      ]
+    },
+    {
+      "Message": "4",
+      "InputSample": [
+        0,
+        0,
+        0
+      ],
+      "OutputSample": [
+        0
+      ]
+    }
+  ]
+}
